@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <title>TechFood - Cardápio Digital</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">TechFood</div>
+        
+        <button class="icon-button" aria-label="Abrir pesquisa">🔍</button>
+        <button class="icon-button" aria-label="Ver carrinho de compras">🛒</button> 
+    </header>
+
+    <section class="banner-hero">
+        <h1>Sabor & Saber</h1>
+        <p>A melhor gastronomia tecnológica da região.</p>
+    </section>
+
+    <main class="menu-container">
+        <h2 class="sr-only">Categorias do Cardápio</h2>
+        
+        <div class="abas-lista">
+            <input type="radio" name="categoria" id="massa" checked>
+            <label for="massa">Massas</label>
+
+            <input type="radio" name="categoria" id="bebida">
+            <label for="bebida">Bebidas</label>
+
+            <input type="radio" name="categoria" id="doce">
+            <label for="doce">Doces</label>
+        </div>
+
+        <div class="aba-tela" id="tela-massas">
+            <div class="grid-produtos">
+                <article class="card">
+                    <img src="src/images/wallhaven-9oz958_1920x1080.png" alt="Lasanha gratinada">
+                    <h3>Lasanha Tradicional</h3>
+                    <p>Massa artesanal ao molho bolonhesa com 4 queijos</p>
+                    <span class="preco">R$ 45,90</span>
+                    <button class="btn-pedir" aria-label="Pedir Lasanha">Pedir</button>
+                </article>
+
+                <article class="card">
+                    <img src="src/images/sukuna-action-3840x2160-25100.jpg" alt="Prato de ravioli">
+                    <h3>Ravioli de Espinafre</h3>
+                    <p>Recheado com ricota fresca e nozes picadas.</p>
+                    <span class="preco">R$ 39,00</span>
+                    <button class="btn-pedir" aria-label="Pedir Ravioli">Pedir</button>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Siga-nos: 
+            <a href="#" aria-label="Siga-nos no Facebook">FB</a> 
+            <a href="#" aria-label="Siga-nos no Instagram">IG</a>
+        </p>
+    </footer>
+</body>
+</html>
