@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9F4F5;
+}
+.topo-loja {
+    background-color: #70587C;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.bt_mn, .label_mn {
+    display: none;
+}
+
+#menu ul {
+    list-style: none;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+#menu li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #C8B8DB;
+    font-weight: 600;
+}
+
+.titulo-secao { 
+    text-align: center;
+    font-weight: 900;
+}
+
+.vitrine-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    background-color: #502F4C;
+    color: whitesmoke;
+}
+
+
+.card img {
+    max-width: 100%;
+    border-radius: 15px;
+    padding: 1px;
+}
+
+.preco {
+    display: block;
+    margin: 10px;
+    color: orangered;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.bt_pedido {
+    background-color: green;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 10px;
+    width: 40%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.bt_pedido:hover {
+    transform: scale(1.03);
+    transform: 0.2 ease in out;
+    font-variant: small-caps;
+
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    background-color: #70587C;
+    color: whitesmoke;
+}
+/* MEDIAS */
+
+@media screen {
+    .topo-loja h1 {
+        letter-spacing: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 601) and (max-width:1024px) {
+    .vitrine-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:600px), (orientation: portrait) {
+    #label_mn { 
+        display: block;
+        font-size: 2.5em;
+        color: chartreuse;
+        cursor: pointer;
+
+}
+}
+
+#bt-menu:checked ~ #menu ul{
+        display: block;
+        padding: 10px 0;
+    }
+
+    .vitrine-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .desc {
+        display: none;
+    }
+
+    #menu li {
+        display: block;
+        margin: 15px 0;
+        border-bottom: 1px solid rgb(67, 67, 255);
+        padding-bottom: 10px;
+    }
+
+@media not screen {
+   #menu, .bt-pedido, #label-menu, #bt-menu  {
+       display: none;
+   }
+}

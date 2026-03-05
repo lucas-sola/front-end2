@@ -1,0 +1,114 @@
+/* Variáveis de Cor para facilitar mudanças */
+:root {
+    --bg-color: #0a0e14;
+    --accent-color: #00ffcc;
+    --text-color: #e0e0e0;
+    --card-bg: #16202a;
+    --footer-opacity: 0.6;
+}
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header com efeito de profundidade */
+header {
+    background: linear-gradient(180deg, #000, var(--bg-color));
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+    box-shadow: 0 0 25px rgba(0, 255, 204, 0.15);
+}
+
+header h1 {
+    font-size: 3.5rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-shadow: 0 0 15px var(--accent-color);
+}
+
+/* Layout do Conteúdo */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Grid de Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    border-top: 3px solid var(--accent-color);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 255, 204, 0.1);
+}
+
+.card h3 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+/* Seção de Chamada para Ação (CTA) */
+.cta {
+    margin-top: 80px;
+    text-align: center;
+    background: rgba(0, 255, 204, 0.03);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.glow-button {
+    margin-top: 20px;
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 12px 35px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.glow-button:hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 20px var(--accent-color);
+}
+
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 0.85rem;
+    opacity: var(--footer-opacity);
+}
