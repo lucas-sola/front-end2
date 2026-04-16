@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animações JS</title>
+
+  <!-- Importa a folha de estilos do projeto -->
+  <link rel="stylesheet" href="src/styles/styles.css" />
+</head>
+<body>
+
+  <!-- ========== CABEÇALHO ========== -->
+  <header class="header">
+    <h1 class="header__titulo">✦ Animações JS</h1>
+    <p class="header__sub">Clique nos cards e explore as animações</p>
+  </header>
+
+  <!-- ========== SEÇÃO PRINCIPAL ========== -->
+  <main class="container">
+
+    <!-- CARD 1 — Contador animado -->
+    <section class="card" id="card-contador">
+      <span class="card__tag">01</span>
+      <h2 class="card__titulo">Contador</h2>
+      <p class="card__desc">Número que sobe suavemente até o valor alvo.</p>
+      <div class="card__demo">
+        <span class="contador" id="contador">0</span>
+      </div>
+      <button class="btn" id="btn-contador">Iniciar</button>
+    </section>
+
+    <!-- CARD 2 — Barra de progresso -->
+    <section class="card" id="card-progresso">
+      <span class="card__tag">02</span>
+      <h2 class="card__titulo">Progresso</h2>
+      <p class="card__desc">Barra que cresce animada com requestAnimationFrame.</p>
+      <div class="card__demo">
+        <div class="progress-track">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <span class="progress-label" id="progress-label">0%</span>
+      </div>
+      <button class="btn" id="btn-progresso">Carregar</button>
+    </section>
+
+    <!-- CARD 3 — Bolinha quicando -->
+    <section class="card" id="card-bola">
+      <span class="card__tag">03</span>
+      <h2 class="card__titulo">Bolinha</h2>
+      <p class="card__desc">Física simples com requestAnimationFrame em loop.</p>
+      <div class="card__demo arena" id="arena">
+        <div class="bola" id="bola"></div>
+      </div>
+      <button class="btn" id="btn-bola">Jogar</button>
+    </section>
+
+    <!-- CARD 4 — Texto digitando -->
+    <section class="card" id="card-typewriter">
+      <span class="card__tag">04</span>
+      <h2 class="card__titulo">Typewriter</h2>
+      <p class="card__desc">Efeito de digitação letra por letra com setTimeout.</p>
+      <div class="card__demo">
+        <p class="typewriter" id="typewriter">_</p>
+      </div>
+      <button class="btn" id="btn-typewriter">Digitar</button>
+    </section>
+
+  </main>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer class="footer">
+    <p>Feito com JS puro — sem bibliotecas ✦</p>
+  </footer>
+
+  <!-- Importa o script no final do body, depois do HTML já ter carregado -->
+  <script src="src/scripts/script.js"></script>
+</body>
+</html>
